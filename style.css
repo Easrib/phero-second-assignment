@@ -112,5 +112,38 @@ p{
 .post-info{
     color: #787885;
 }
+.more{
+    text-align: right;
+    margin: 30px;
+}
+.more a{
+    text-decoration: none;
+    color: #E02C6D;
+}
 /* popular posts style ends here  */
 /* main style ends here  */
+/* footer style starts here  */
+footer{
+    background: #0A0826;
+    text-align: center;
+    padding: 50px 0 34px;
+}
+.footer-info h1{
+    margin: 0 0 5px 0;
+    color: #ffffff;
+}
+.footer-info p{
+    color: #ffffff;
+}
+.social-media a{
+    text-decoration: none;
+    margin-left: 16px;
+}
+.social-media a .fab{
+    color: white;
+    background: #211b7a;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+/* footer style ends here  */
