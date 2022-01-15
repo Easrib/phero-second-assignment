@@ -121,6 +121,24 @@ p{
     color: #E02C6D;
 }
 /* popular posts style ends here  */
+/* feedback style starts here  */
+.feedback{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 170px 100px;
+}
+.feedback-image img{
+    width: 500px;
+}
+.feedback-form{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.feedback-form input{
+    width:60%;
+}
+/* feedback style ends here  */
 /* main style ends here  */
 /* footer style starts here  */
 footer{
@@ -147,3 +165,92 @@ footer{
 }
 
 /* footer style ends here  */
+
+/* responsive for mobile starts here  */
+@media only screen and (max-width:576px) {
+    /* header style starts here  */
+    .menu-bar{
+       flex-direction: column;
+       margin: 35px 20px;
+       align-items: center;
+    }
+    .menus{
+        padding-top: 5px;
+    }
+    .menus ul li{
+        margin-right: 14px;
+    }
+    /* header style ends here  */
+    /* main style starts here  */
+    /* intro style starts here  */
+    .intro{
+        flex-direction: column-reverse;
+    }
+    .intro-pic img{
+        width: 257px;
+        height: 257px;
+        margin: 30px 33px 0px 2px;
+        transition: 0.1s ease-in-out;
+    }
+    .intro-details{
+        margin-top: 0px;
+    margin-right: 18px;
+
+    }
+    .intro-details h1{
+        font-size: 28px;
+        text-align: center;
+    }
+    .intro-details p{
+        text-align: center;
+    }
+    .intro-details .btn{
+        margin-left: 20%;
+    }
+    /* intro style ends here  */
+    /* logos style starts here  */
+    .logos{
+        margin: 10px;
+    }
+    .logos ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .logos ul li{
+        margin-right: 15px;
+    }
+    /* logos style ends here  */
+    /* posts style starts here */
+    .popular-posts{
+        margin: 0px 10px 10px;
+    }
+    .posts{
+        /* display: grid;
+        grid-template-columns: repeat(1, 1fr); */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .post{
+        margin: 10px;
+    }
+    .post-image img{
+        width: 100%;
+    }
+    /* posts style ends here */
+    /* feedback style starts here  */
+    .feedback{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px;
+    }
+    .feedback-image img{
+        width: 95%;
+        padding-left: 2%;
+    }
+    .feedback .btn{
+        margin-left: 26%;
+    }
+    /* feedback style ends here  */
+    /* main style ends here  */
+}
+/* responsive for mobile ends here  */
